@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Sneaker Kicks</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+     <!----details-product-slider--->
+				<!-- Include the Etalage files -->
+					<link rel="stylesheet" href="css/etalage.css">
+					<script src="js/jquery.etalage.min.js"></script>
+				<!-- Include the Etalage files -->
+				<script>
+						jQuery(document).ready(function($){
+			
+							$('#etalage').etalage({
+								thumb_image_width: 300,
+								thumb_image_height: 400,
+								
+								show_hint: true,
+								click_callback: function(image_anchor, instance_id){
+									alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+								}
+							});
+							// This is for the dropdown list example:
+							$('.dropdownlist').change(function(){
+								etalage_show( $(this).find('option:selected').attr('class') );
+							});
+
+					});
+				</script>
+				<!----//details-product-slider--->	
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="images/logo.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li class="current"><a href="shop.html">Shop</a></li>
+						    	<li><a href="experience.html">Experience</a></li>
+								<li><a href="contact.html">Contact</a></li>	
+								<li><a href="login.html">Login</a></li>								
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  <!-- start search-->
+				   <div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						<!----search-scripts---->
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+				    <ul class="icon1 sub-icon1 profile_img">
+					 <li><a class="active-icon c1" href="#"> </a>
+						<ul class="sub-icon1 list">
+						  <div class="product_control_buttons">
+						  	<a href="#"><img src="images/edit.png" alt=""/></a>
+						  		<a href="#"><img src="images/close_edit.png" alt=""/></a>
+						  </div>
+						  <div class="clear"></div>
+						</ul>
+					 </li>
+				   </ul>
+		        <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	  </div>
+     <div class="main">
+      <div class="shop_top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9 single_left">
+				   <div class="single_image">
+					     <ul id="etalage">
+							<li>
+								<a href="optionallink.html">
+									<img class="etalage_thumb_image" src="images/8.jpg" />
+									<img class="etalage_source_image" src="images/8.jpg" />
+								</a>
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/9.jpg" />
+								<img class="etalage_source_image" src="images/9.jpg" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/10.jpg" />
+								<img class="etalage_source_image" src="images/10.jpg" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/11.jpg" />
+								<img class="etalage_source_image" src="images/11.jpg" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/12.jpg" />
+								<img class="etalage_source_image" src="images/12.jpg" />
+							</li>
+						</ul>
+					    </div>
+				        <!-- end product_slider -->
+				        <div class="single_right">
+				        	<h3>Air Jordan 4 Infrared</h3>
+				        	<p class="m_10">What's in a colour? Coveted style, a lot of history and enough character to define your entire fit. Bursts of Infrared bring the shoe that first took flight in 1989 back to centre stage. The electric neon, made famous by another Tinker Hatfield classic, pairs perfectly with varying shades of grey throughout for a bold look that's easy to style. Its unique "wings" allow you to customise your laces, black accents boost the contrast and draw all eyes to the flashy Infrared detailing, and Air cushioning delivers the all-star comfort you love. Lace up and let the Air Jordan 4 do all the talking.</p>
+				        	<ul class="options">
+								<h4 class="m_12">Select a Size(ft)</h4>
+								<li><a href="#">6</a></li>
+								<li><a href="#">7</a></li>
+								<li><a href="#">8</a></li>
+								<li><a href="#">9</a></li>
+								<li><a href="#">10</a></li>
+								<li><a href="#">11</a></li>
+							</ul>
+							<div class="btn_form">
+							   <form>
+								 <input type="submit" value="buy now" title="">
+							  </form>
+							</div>
+							<ul class="add-to-links">
+    			              <li><img src="images/wish.png" alt=""><a href="#">Add to wishlist</a></li>
+    			            </ul>
+							<div class="social_buttons">
+								<h4>95 Items</h4>
+								<button type="button" class="btn1 btn1-default1 btn1-twitter" onclick="">
+					              <i class="icon-twitter"></i> Tweet
+					            </button>
+					            <button type="button" class="btn1 btn1-default1 btn1-facebook" onclick="">
+					              <i class="icon-facebook"></i> Share
+					            </button>
+					             <button type="button" class="btn1 btn1-default1 btn1-google" onclick="">
+					              <i class="icon-google"></i> Google+
+					            </button>
+					            <button type="button" class="btn1 btn1-default1 btn1-pinterest" onclick="">
+					              <i class="icon-pinterest"></i> Pinterest
+					            </button>
+					        </div>
+				        </div>
+				        <div class="clear"> </div>
+				</div>
+				<div class="col-md-3">
+				  <div class="box-info-product">
+					<p class="price2">Rs 16000</p>
+					       <ul class="prosuct-qty">
+								<span>Quantity:</span>
+								<select>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+								</select>
+							</ul>
+							<button type="submit" name="Submit" class="exclusive">
+							   <span>Add to cart</span>
+							</button>
+				   </div>
+			   </div>
+			</div>		
+			<div class="desc">
+			   	<h4>Description</h4>
+			   	<p>Air Jordan 4
+					Since his game-winning shot that brought championship glory to North Carolina, Michael Jordan has been at the forefront of basketball consciousness. He took to the court in 1985 wearing the original Air Jordan I, simultaneously breaking league rules and his opponents' will, while capturing the imaginations of fans worldwide.</p>
+				    </div>
+					<div>
+						<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+       					<div id="chart_div" style="width: 100%; height: 500px;"></div>
+					</div>
+				</div>
+			</div>	
+	     </div>
+	   </div>
+	  </div>
+	  <div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>About</h4>
+							<li><a href="#">Careers and internships</a></li>
+							<li><a href="#">Sponserships</a></li>
+							<li><a href="#">Team</a></li>
+							<li><a href="#">Catalog Request/Download</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row footer_bottom">
+				    <div class="copy">
+		            </div>
+				         </dd>
+	   				  </dl>
+   				</div>
+			</div>
+		</div>
+</body>	
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Sneaker Kicks</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+ </head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="images/logo.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li><a href="shop.html">Shop</a></li>
+						    	<li><a href="experience.html">Experience</a></li>
+								<li><a href="contact.html">Contact</a></li>	
+								<li><a href="login.html">Login</a></li>								
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  <!-- start search-->
+		        <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	  </div>
+     <div class="main">
+      <div class="shop_top">
+		<div class="container">
+			<div class="col-md-6">
+				 <div class="login-page">
+					<h4 class="title">New Customers</h4>
+					<p>This privacy policy (the “Privacy Policy”), describes Sneaker Kicks’s policies and procedures on the collection, use and disclosure of the information provided by Users and Visitors (as defined herein below) of the Platforms. Sneaker Kicks shall not use the User’s information in any manner except as provided under this Privacy Policy. Every User who accesses or uses the Platforms shall be bound by this Privacy Policy.
+
+						Our website uses encryption technology to protect your personal information during data transport. SSL encrypts ordering information such as your name, address, and credit card number. Our Customer Care center and stores also operate over a private, secure network. Please note that email is not encrypted and is not considered to be a secure means of transmitting credit card information.</p>
+					<div class="button1">
+					   <a href="register.html"><input type="submit" name="Submit" value="Create an Account"></a>
+					 </div>
+					 <div class="clear"></div>
+				  </div>
+				</div>
+				<div class="col-md-6">
+				 <div class="login-title">
+	           		<h4 class="title">Registered Customers</h4>
+					<div id="loginbox" class="loginbox">
+						<form action="" method="post" name="login" id="login-form">
+						  <fieldset class="input">
+						    <p id="login-form-username">
+						      <label for="modlgn_username">Email</label>
+						      <input id="modlgn_username" type="text" name="email" class="inputbox" size="18" autocomplete="off">
+						    </p>
+						    <p id="login-form-password">
+						      <label for="modlgn_passwd">Password</label>
+						      <input id="modlgn_passwd" type="password" name="password" class="inputbox" size="18" autocomplete="off">
+						    </p>
+						    <div class="remember">
+							    <p id="login-form-remember">
+							      <label for="modlgn_remember"><a href="register.html">Forget Your Password ? </a></label>
+							   </p>
+								<style>
+								a:link, a:visited {
+  								color: red;
+  								padding: 14px 25px;
+  								text-align: center;
+  								text-decoration: none;
+  								display: inline-block;
+								}
+								a:hover, a:active {	
+  								background-color: black;
+								}
+								</style>
+								<a href="shop.html" target="_blank">Login</a>
+							 </div>
+						  </fieldset>
+						 </form>
+					</div>
+			      </div>
+				 <div class="clear"></div>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+	  <div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>About</h4>
+							<li><a href="#">Careers and internships</a></li>
+							<li><a href="#">Sponserships</a></li>
+							<li><a href="#">Team</a></li>
+							<li><a href="#">Catalog Request/Download</a></li>
+		   				</ul>
+					</div>
+				</div>
+				<div class="row footer_bottom">
+				    <div class="copy">
+		            </div>
+				            </ul>
+				         </dd>
+	   				  </dl>
+   				</div>
+			</div>
+		</div>
+</body>	
+</html>

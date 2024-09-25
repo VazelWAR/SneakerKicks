@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Sneaker Kicks</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<!--<script src="js/jquery.easydropdown.js"></script>-->
+<!--start slider -->
+<link rel="stylesheet" href="css/fwslider.css" media="all">
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/fwslider.js"></script>
+<!--end slider -->
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+</head>
+<body>
+	<script src="//code.tidio.co/zhc2qdnku2vboex0mkpzqustyestbijx.js" async></script>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="images/logo.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li><a href="shop.html">Shop</a></li>
+						    	<li><a href="experience.html">Experience</a></li>
+								<li><a href="contact.html">Contact</a></li>	
+								<li><a href="login.html">Login</a></li>							
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  <!-- start search-->
+				      <div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						<!----search-scripts---->
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+						<!----//search-scripts---->
+				    <ul class="icon1 sub-icon1 profile_img">
+					 <li><a class="active-icon c1" href="#"> </a>
+						<ul class="sub-icon1 list">
+						  <div class="product_control_buttons">
+						  	<a href="#"><img src="images/edit.png" alt=""/></a>
+						  		<a href="#"><img src="images/close_edit.png" alt=""/></a>
+						  </div>
+						  <div class="clear"></div>
+						</ul>
+					 </li>
+				   </ul>
+		           <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	</div>
+	<div class="banner">
+	<!-- start slider -->
+       <div id="fwslider">
+         <div class="slider_container">
+            <div class="slide"> 
+                <!-- Slide image -->
+               <img src="images\Adidas-Unveils-Next-Generation-Ultraboost.jpg" class="img-responsive" alt="Adidas-Unveils-Next-Generation-Ultraboost.jpg"/>
+                <!-- /Slide image -->
+                <!-- Texts container -->
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                        <!-- Text title -->
+                        <h1 class="title">Impossible is<br>Nothing</h1>
+                        <!-- /Text title -->
+                        <div class="button"><a href="#">See Details</a><li></div>
+                    </div>
+                </div>
+               <!-- /Texts container -->
+            </div>
+            <!-- /Duplicate to create more slides -->
+            <div class="slide">
+               <img src="images\xlsdhhukhrsn1gwwre6w.jpg" class="img-responsive" alt="xlsdhhukhrsn1gwwre6w.jpg"/>
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                        <h1 class="qrsatitle">Just do<br>it</h1>
+                       	<div class="button"><a href="#">See Details</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--/slide -->
+        </div>
+        <div class="timers"></div>
+        <div class="slidePrev"><span></span></div>
+        <div class="slideNext"><span></span></div>
+       </div>
+       <!--/slider -->
+      </div>
+	  <div class="main">
+		<div class="content-top">
+			<h2>sneakers</h2>
+			<p>Best collection of sneakers</p>
+			<div class="close_but"><i class="close1"> </i></div>
+				<ul id="flexiselDemo3">
+				<li><img src="https://images.squarespace-cdn.com/content/v1/6144d106ee0f834ae92b4f60/1660754634480-Z0AE0Y2MUQSTTHOWKXUH/LaMelo+Ball%27s+extra+fire+MB.01+Iridescent+Dreams+sneakers+drop+next+week678_02_sv03.jpg" alt="LaMelo+Ball's+extra+fire+MB.01+Iridescent+Dreams+sneakers+drop+next+week678_02_sv03" /></li>
+				<li><img src="https://n4.sdlcdn.com/imgs/i/z/g/Puma-Hybrid-Rocket-Balck-Running-SDL688119492-2-d5a9b.jpg" alt="Puma-Hybrid-Rocket-Balck-Running-SDL688119492-2-d5a9b.jpg" /></li>
+				<li><img src="https://www.tradeinn.com/f/13896/138961648_3/adidas-ultraboost-22-running-shoes.jpg" alt="adidas-ultraboost-22-running-shoes.jpg" /></li>
+				<li><img src="https://m.media-amazon.com/images/I/51qWTLzPMCL._UL1000_.jpg" alt="51qWTLzPMCL._UL1000_.jpg"/></li>
+				<li><img src="https://i31.takemore.net/images/products/43/05/88/nike-ao1554002-exp_x14-1.jpg" alt="nike-ao1554002-exp_x14.jpg-1"/></li>
+			</ul>
+		<h3>Highest Selling Sneakers </h3>
+			<script type="text/javascript">
+		$(window).load(function() {
+			$("#flexiselDemo3").flexisel({
+				visibleItems: 5,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 1000,    		
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+		    	responsiveBreakpoints: { 
+		    		portrait: { 
+		    			changePoint:200,
+		    			visibleItems: 1
+		    		}, 
+		    		landscape: { 
+		    			changePoint:150,
+		    			visibleItems: 2
+		    		},
+		    		tablet: { 
+		    			changePoint:120,
+		    			visibleItems: 3
+		    		}
+		    	}
+		    });
+		    
+		});
+		</script>
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		</div>
+	</div>
+	<div class="content-bottom">
+		<div class="container">
+			<div class="row content_bottom-text">
+			  <div class="col-md-7">
+				<h3>About<br>Sneakers</h3>
+				<p class="m_1">Sneakers (also called trainers, athletic shoes, tennis shoes, gym shoes, kicks, sport shoes, flats, running shoes, or runners) are shoes primarily designed for sports or other forms of physical exercise, but which are now also widely used for everyday casual wear. Since their popularization by companies such as Converse, Nike and Spalding in the mid 20th century, they have become attire, with variety growing in many global markets exponentially. Like other parts of the global clothing industry, manufacture of shoes is heavily concentrated in Asia with nine in ten shoes produced in that region.</p>
+				<p class="m_2">Running shoes come in a range of shapes suited to different running styles/abilities. Generally, they are divided by running style: the majority are for heel-toe joggers/runners which are further subdivided into 'neutral', 'overpronation' and 'underpronation'. These are constructed with a complex structure of "rubber" with plastic/metal stiffeners to restrict foot movement. More advanced runners tend to wear flatter and flexible shoes, which allow them to run more quickly with greater comfort. According to the NPD Group, one in four pairs of running shoes that were sold in the United States in 2016 were bought from an online retailer.</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<div class="features">
+		<div class="container">
+			<h3 class="m_3">Satisfied Customers Review</h3>
+			<div class="close_but"><i class="close1"> </i></div>
+			  <div class="row">
+				<div class="col-md-3 top_box">
+				  <div class="view view-ninth"><a href="single.html">
+                    <img src="images/pic1.jpg" class="img-responsive" alt=""/>
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                      <div class="content">
+                        <h2>Pic#1</h2>
+                        <p>Image by Rohan</p>
+                      </div>
+                   </a>
+                  </div>
+                  <h4 class="m_4"><a href="#">Superb Quality</a></h4>
+                  <p class="m_5">Must Buy</p>
+                </div>
+                <div class="col-md-3 top_box">
+					<div class="view view-ninth"><a href="single.html">
+                    <img src="images/pic2.jpg" class="img-responsive" alt=""/>
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                      <div class="content">
+                        <h2>Pic#2</h2>
+                        <p>Image by Shubhanshu</p>
+                      </div>
+                    </a> </div>
+                   <h4 class="m_4"><a href="#">Quality is unbelievable</a></h4>
+                   <p class="m_5">Thanks Sneaker Kicks</p>
+				</div>
+				<div class="col-md-3 top_box">
+					<div class="view view-ninth"><a href="single.html">
+                    <img src="images/pic3.jpg" class="img-responsive" alt=""/>
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                      <div class="content">
+                        <h2>Pic#3</h2>
+                        <p>Image by Dinesh</p>
+                      </div>
+                    </a> </div>
+                   <h4 class="m_4"><a href="#">Price point hits ryt</a></h4>
+                   <p class="m_5">Also suggested my friends</p>
+				</div>
+				<div class="col-md-3 top_box1">
+					<div class="view view-ninth"><a href="single.html">
+                    <img src="images/pic4.jpg" class="img-responsive" alt=""/>
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                      <div class="content">
+                        <h2>Pic#4</h2>
+                        <p>Image by Sanyam</p>
+                      </div>
+                     </a> </div>
+                   <h4 class="m_4"><a href="#">Selling best products at best price</a></h4>
+                   <p class="m_5">a must buy option</p>
+				</div>
+			</div>
+		 </div>
+	    </div>
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>About</h4>
+							<li><a href="#">Careers and internships</a></li>
+							<li><a href="#">Sponserships</a></li>
+							<li><a href="#">Team</a></li>
+							<li><a href="#">Catalog Request/Download</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row footer_bottom">
+				    <div class="copy">
+				         </dd>
+	   				  </dl>
+   				</div>
+			</div>
+		</div>
+</body>	
+</html>
